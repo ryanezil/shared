@@ -9,7 +9,7 @@ public class UpperCaseProcessor implements Processor {
 	public void process(Exchange exchange) throws Exception {
 
                 String body = exchange.getIn().getBody(String.class);
-                body = body.toUpperCase().concat("-nuevo");
+                body = body.toUpperCase().concat("-github");
                 exchange.getOut().setBody(body);
 	}
 
