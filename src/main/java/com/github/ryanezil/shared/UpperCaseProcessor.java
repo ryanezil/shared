@@ -12,8 +12,7 @@ public class UpperCaseProcessor implements Processor {
 	public void process(Exchange exchange) throws Exception {
 
                 String body = exchange.getIn().getBody(String.class);
-                body = body.toUpperCase().concat("-mytext");
+                body = body.toUpperCase().concat("-mysuffix");
                 exchange.getOut().setBody(body);
 	}
-
 }
