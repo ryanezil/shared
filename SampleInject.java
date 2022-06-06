@@ -31,7 +31,7 @@ public class SampleInject extends RouteBuilder {
           .setBody(constant("Hello world!"))
 //          .process(upperCaseProcessor)
           .process(new UpperCaseProcessor())
-          .to("direct:sendEmail")
+//          .to("direct:sendEmail")
           .log(LoggingLevel.INFO,"e-mail sent!");
     }
 }
